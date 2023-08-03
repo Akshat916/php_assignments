@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User login and logout</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <div class="container">
@@ -13,6 +13,15 @@
         <?php
             if(isset($_GET['Message'])){
                 echo $_GET['Message'];
+            }
+            elseif(isset($_GET['emailErr'])){
+                echo $_GET['emailErr'];
+            }
+            elseif(isset($_GET['passwordErr'])){
+                echo $_GET['passwordErr'];
+            }
+            else{
+                echo '';
             }
         ?>
         </p>

@@ -22,3 +22,13 @@ input[type='submit']{
     padding: .5rem 1rem;
     font-size: 1rem;
 }
+
+.logout{
+    margin-bottom: 1rem;
+}
+
+a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: red;
+}

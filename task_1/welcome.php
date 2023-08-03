@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if(!isset($_SESSION['fname']) and !isset($_SESSION['lname'])){
+    header("Location:index.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +12,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     

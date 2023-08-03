@@ -6,5 +6,4 @@ $dbname = "php_assignment";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-
 ?>
