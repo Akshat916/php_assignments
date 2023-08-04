@@ -32,7 +32,7 @@
             <div class="form-input">
                 <input type="password" name="password" placeholder="Password">
             </div>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Login">
         </form>
     </div>
 </body>
