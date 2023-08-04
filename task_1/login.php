@@ -15,15 +15,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailErr = 'Invaild email';
         header("Location:index.php?emailErr=" . $emailErr);
     } else {
+        if (empty($password)) {
+            $passwordErr = 'Password is required';
+            header("Location:index.php?passwordErr=" . $passwordErr."&email=".$email);
+        } else {
+            $flag += 1;
+        }
         $flag += 1;
     }
 
-    if (empty($password)) {
-        $passwordErr = 'Password is required';
-        header("Location:index.php?passwordErr=" . $passwordErr);
-    } else {
-        $flag += 1;
-    }
 
     if ($flag === 2) {
 
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         } else {
             $Message = "Invalid username or password";
-            header("Location: index.php?Message=" . $Message);
+            header("Location: index.php?Message=" . $Message."&email=".$email);
         }
     }
 }

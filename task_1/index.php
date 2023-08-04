@@ -27,7 +27,7 @@
         </p>
         <form action="login.php" method="post">
             <div class="form-input">
-                <input type="text" name="email" placeholder="Email">
+                <input type="text" name="email" placeholder="Email" value="<?php echo $_GET['email']; ?>">
             </div>
             <div class="form-input">
                 <input type="password" name="password" placeholder="Password">
