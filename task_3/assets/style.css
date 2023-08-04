@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 15% 40%;
+}
+
+.error{
+    color: red;
+    margin-top: 1rem;
+}
+input{
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+input[type='submit']{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+
+.nav{
+    display: flex;
+}
+
+a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: red;
+    margin: 1rem;
+}
+
+.blue{
+    color: blue;
+}
