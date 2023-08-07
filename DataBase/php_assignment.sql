@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 04, 2023 at 05:47 PM
+-- Generation Time: Aug 07, 2023 at 11:07 PM
 -- Server version: 8.0.33-0ubuntu0.22.04.4
 -- PHP Version: 8.1.2-1ubuntu2.13
 
@@ -36,15 +36,19 @@ CREATE TABLE `user` (
   `interest` varchar(300) NOT NULL,
   `education` varchar(100) NOT NULL,
   `profession` varchar(50) NOT NULL,
-  `hobbies` varchar(100) NOT NULL
+  `hobbies` varchar(100) NOT NULL,
+  `country` varchar(100) NOT NULL,
+  `state` varchar(100) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `postal_code` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`email`, `password`, `fname`, `lname`, `username`, `interest`, `education`, `profession`, `hobbies`) VALUES
-('akshat@gmail.com', '62d65acf62cfcc213082a5284db7c9ad', 'Akshat', 'Jain', 'Akshatjain26', 'Web', 'B. Tech', 'SDT', 'Online Games');
+INSERT INTO `user` (`email`, `password`, `fname`, `lname`, `username`, `interest`, `education`, `profession`, `hobbies`, `country`, `state`, `city`, `postal_code`) VALUES
+('akshat@gmail.com', '666a17cf7a0dac534cb7413f73172bb5', 'Akshat', 'Jain', 'Akshatjain26', 'Web', 'B. Tech', 'SDT', 'Online Games', 'India', 'Madhya Pradesh', 'Bhopal', '930292');
 
 --
 -- Indexes for dumped tables

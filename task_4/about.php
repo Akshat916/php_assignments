@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['email'])){
+if(!isset($_SESSION['fname']) and !isset($_SESSION['lname']) and !isset($_SESSION['email'])){
     header("Location:index.php");
     exit();
 }
@@ -22,8 +22,8 @@ if(!isset($_SESSION['email'])){
             <a href="profile.php" class="blue">Profile</a>
             <a href="logout.php">Logout</a>
         </div>
-        <h1>Hi <?php echo $_SESSION['fname'] ." ". $_SESSION['lname'];?> !</h1>
-        <h1>WE WELCOME YOU TO OUR COMMUNITY</h1>
+        <h1>ABOUT US</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, dicta iure nemo voluptates nesciunt sed amet deserunt! Ut reprehenderit quidem ad voluptates nihil modi perferendis esse at! Odit, dolor porro.</p>
     </div>
 
 </body>
