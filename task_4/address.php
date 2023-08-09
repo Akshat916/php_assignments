@@ -56,12 +56,10 @@ if ($result->num_rows > 0) {
 
             <select id="state" name="state" required>
                 <option value="">---select---</option>
-                <!-- Populate cities based on the selected country using JavaScript -->
             </select>
 
             <select id="city" name="city" required>
                 <option value="">---select---</option>
-                <!-- Populate cities based on the selected country using JavaScript -->
             </select>
 
             <input type="text" name="postal_code"  id="postal_code" placeholder="Postal Code" required>
@@ -75,7 +73,7 @@ if ($result->num_rows > 0) {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Function to populate cities based on the selected country
+            
             function stateName(selectedCountry) {
                 var state = {
                     'India': ['---select---','Madhya Pradesh', 'Maharashtra', 'Gujarat'],
